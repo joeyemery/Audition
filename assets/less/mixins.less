@@ -1,0 +1,33 @@
+/* ----------------------------------------------------
+
+	* Filename:		mixins.less
+
+	* Description:	Contains all site mixins.
+
+	* Updated:		21/07/2013
+		* By:		Joey Emery
+
+	== CONTENTS =======================================
+
+		- Gradients
+
+-----------------------------------------------------*/
+
+/*
+ * ================
+ * $GRADIENTS
+ * ================
+ */
+
+.twoway_gradient(@color_1: #fff, @color_2: #eee) {
+   background-color: @color_2;
+   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@color_1), to(@color_2));
+   background-image: -webkit-linear-gradient(@color_1, @color_2);
+   background-image: -moz-linear-gradient(@color_1, @color_2);
+   background-image: -o-linear-gradient(@color_1, @color_2);
+   background-image: linear-gradient(@color_1, @color_2);
+}
+
+.box_sizing(@params) {
+	box-sizing: @params;
+}
