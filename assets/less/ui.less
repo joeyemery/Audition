@@ -324,3 +324,66 @@ section.bookmark {
 		text-shadow:	0 1px 1px darken(#288449, 5%);
 	}
 }
+
+/*
+ * ================
+ * $MENU
+ * ================
+ */
+
+.menu {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 250px;
+	min-height: 500px;
+	background: darken(@colour_base_bg, 3%);
+
+	.seperator {
+		padding: 5px 15px;
+	}
+
+	ul {
+		display: block;
+
+		li {
+			display: block;
+			padding: 7px 15px;
+			border-bottom: 1px solid #1d2128;
+
+			&.active {
+				.twoway_gradient(#309958, #288449);
+
+				a {
+					color: #fff;
+				}
+			}
+
+			a {
+				color: lighten(@colour_base_bg, 30%);
+
+				span:first-child {
+					margin-right: 10px;
+				}
+
+				span.notif {
+					.border_radius(5px);
+					display: inline-block;
+					float: right;
+					padding: 0 10px;
+					background: darken(@colour_base_bg, 6%);
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.menu_hidden {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	display: block;
+	width: 100%;
+}

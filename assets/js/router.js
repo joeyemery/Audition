@@ -2,13 +2,15 @@ define([
 	'backbone',
 	'views/DashboardView',
 	'views/LoginView',
+	'views/MenuView',
 	'models/SessionModel'
-], function(Backbone, DashboardView, LoginView, Session) {
+], function(Backbone, DashboardView, LoginView, MenuView, Session) {
 
 	// Extend backbones router to define our routes.
 	var AppRouter = Backbone.Router.extend({
 		routes: {
-			'dashboard': '/dashboard',
+			'dashboard': 	'/dashboard',
+			'menu': 		'/menu',
 
 			// Home/unrecognized route.
 			'*actions': '/dashboard'
@@ -21,13 +23,12 @@ define([
 
 		// Dashboard route.
 		app_router.on('route:/dashboard', function() {
-			if(Session.is_authenticated()) {
-				// Create a new instance of the dashboard view.
-				var dashboardView = new DashboardView;
-			} else {
-				app_router.navigate('home', {trigger: true});
-			}
 			var dashboardView = new DashboardView;
+		});
+
+		// Menu route.
+		app_router.on('route:/menu', function() {
+			var menuView = new MenuView;
 		});
 
 		// Default/Home route.

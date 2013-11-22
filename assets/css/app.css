@@ -1741,6 +1741,63 @@ section.bookmark a {
   font-weight: bold;
   text-shadow: 0 1px 1px #22703e;
 }
+/*
+ * ================
+ * $MENU
+ * ================
+ */
+.menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  min-height: 500px;
+  background: #20242a;
+}
+.menu .seperator {
+  padding: 5px 15px;
+}
+.menu ul {
+  display: block;
+}
+.menu ul li {
+  display: block;
+  padding: 7px 15px;
+  border-bottom: 1px solid #1d2128;
+}
+.menu ul li.active {
+  background-color: #288449;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#309958), to(#288449));
+  background-image: -webkit-linear-gradient(#309958, #288449);
+  background-image: -moz-linear-gradient(#309958, #288449);
+  background-image: -o-linear-gradient(#309958, #288449);
+  background-image: linear-gradient(#309958, #288449);
+}
+.menu ul li.active a {
+  color: #fff;
+}
+.menu ul li a {
+  color: #69748a;
+}
+.menu ul li a span:first-child {
+  margin-right: 10px;
+}
+.menu ul li a span.notif {
+  border-radius: 5px;
+  display: inline-block;
+  float: right;
+  padding: 0 10px;
+  background: #1a1c22;
+  color: #fff;
+}
+.menu_hidden {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  display: block;
+  width: 100%;
+}
 /* Generic UI styles */
 /*
  * ================
@@ -1749,6 +1806,7 @@ section.bookmark a {
  */
 body {
   background: #272b33;
+  overflow-x: hidden;
 }
 /*
  * ================
