@@ -349,7 +349,6 @@ section.bookmark {
 
 		li {
 			display: block;
-			padding: 7px 15px;
 			border-bottom: 1px solid #1d2128;
 
 			&.active {
@@ -361,7 +360,9 @@ section.bookmark {
 			}
 
 			a {
+				display: block;
 				color: lighten(@colour_base_bg, 30%);
+				padding: 7px 15px;
 
 				span:first-child {
 					margin-right: 10px;
@@ -374,6 +375,22 @@ section.bookmark {
 					padding: 0 10px;
 					background: darken(@colour_base_bg, 6%);
 					color: #fff;
+				}
+			}
+		}
+
+		&.recent_contacts {
+			.clearfix;
+
+			li {
+				display: inline-block;
+				float: left;
+				padding: 0;
+				height: 50px;
+				border-bottom: 0;
+
+				img {
+					width: 50px;
 				}
 			}
 		}

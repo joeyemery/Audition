@@ -1763,7 +1763,6 @@ section.bookmark a {
 }
 .menu ul li {
   display: block;
-  padding: 7px 15px;
   border-bottom: 1px solid #1d2128;
 }
 .menu ul li.active {
@@ -1778,7 +1777,9 @@ section.bookmark a {
   color: #fff;
 }
 .menu ul li a {
+  display: block;
   color: #69748a;
+  padding: 7px 15px;
 }
 .menu ul li a span:first-child {
   margin-right: 10px;
@@ -1790,6 +1791,28 @@ section.bookmark a {
   padding: 0 10px;
   background: #1a1c22;
   color: #fff;
+}
+.menu ul.recent_contacts {
+  zoom: 1;
+}
+.menu ul.recent_contacts:before {
+  content: '';
+  display: block;
+}
+.menu ul.recent_contacts:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.menu ul.recent_contacts li {
+  display: inline-block;
+  float: left;
+  padding: 0;
+  height: 50px;
+  border-bottom: 0;
+}
+.menu ul.recent_contacts li img {
+  width: 50px;
 }
 .menu_hidden {
   position: absolute;
