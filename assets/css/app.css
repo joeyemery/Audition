@@ -1449,11 +1449,11 @@ header section.info p {
   display: block;
   color: #318cbb;
 }
-header section.settings {
+header section.super-icon {
   float: right;
   padding: 0;
 }
-header section.settings a {
+header section.super-icon a {
   background-color: #2c7da7;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#318cbb), to(#2c7da7));
   background-image: -webkit-linear-gradient(#318cbb, #2c7da7);
@@ -1471,7 +1471,7 @@ header section.settings a {
   font-size: 0.8em;
   line-height: 1em;
 }
-header section.settings a span {
+header section.super-icon a span {
   padding: 10px 0;
   display: block;
   font-size: 2.8em;
